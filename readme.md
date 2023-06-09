@@ -46,17 +46,17 @@ The website include 5 parts
 ### Utilisation of the C application
 
 Go to the C kernel source folder: 
-    `cd /noyauC`
-Compile the application with the : 
-    `gcc *.c -o application -lm`
+`cd /noyauC`
+ the application with the : 
+`gcc *.c -o application -lm`
 Run the application :
-    `./application`
+`./application`
 
 The application is divided into 5 parts
-    - A section for calculations and exports
-    - Scientific information on the planets of the solar system
-    - A section on energy audit calculations
-    - And finally, two parts for generating the json files used by the web application
+- A section for calculations and exports
+- Scientific information on the planets of the solar system
+- A section on energy audit calculations
+- And finally, two parts for generating the json files used by the web application
 
 
 ## Repertory Github : 
