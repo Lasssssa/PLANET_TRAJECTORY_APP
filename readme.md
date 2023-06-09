@@ -37,11 +37,11 @@ The aim was also to create a `web application` to display the trajectories previ
 ### Utilisation of the current site 
 
 The website include 5 parts
-    - Home page with a description of the project in French
-    - The presentation page, which displays planetary trajectories and moving planets. 
-    - An information page describing the planets of the solar system and the planets of the system. Also in French
-    - A source page to find all the sources we may have used (photos, etc.). 
-    - A trajectory page for displaying trajectories at once, for easier analysis. It also allows you to compare the Euler and Euler Asymmetric methods.
+- Home page with a description of the project in French
+- The presentation page, which displays planetary trajectories and moving planets. 
+- An information page describing the planets of the solar system and the planets of the system. Also in French
+- A source page to find all the sources we may have used (photos, etc.). 
+- A trajectory page for displaying trajectories at once, for easier analysis. It also allows you to compare the Euler and Euler Asymmetric methods.
 
 ### Utilisation of the C application
 
