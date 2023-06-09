@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head> <!-- Tout les liens donc nous avons besoin pour prendre des ressources sur internet--> 
+   <meta charset="utf-8">
+   <title> Accueil </title>
+   <link href="style.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <div id="haut"> <!-- Image ISEN Associations des inégnieurs --> 
+       <div id="leftHaut">
+            <img src="images/logo-footer.png" width="400">
+       </div>
+    </div>
+    <div> <!-- Barre pour mettre du relief avec l'image -->
+        <img src="images/test.png">
+    </div>
+    <div id="menu"> <!-- Barre de navigation entre les différentes pages -->
+        <div id="id1color">
+            <a href="accueil.html">Accueil</a> 
+        </div>
+        <div id="id2"class="oneclick">
+            <a href="presentation.html">Présentation</a>
+        </div>
+        <div id="id3">
+            <a href="informations.html">Informations</a>
+        </div>
+        <div id="id4">
+            <a href="sources.html">Sources</a>
+        </div>
+        <div id="id5">
+            <a href="enplus.html">Trajectoire</a>
+        </div>
+    </div>
+    <div id ="accueil"> <!-- Page accueil : Description du projet-->
+        <div id="titre">
+            <h1>Projet Kepler</h1>
+        </div>
+        <div id = "attendus"> <!--C'est ici que nous avons mis ce que nous devons faire-->
+            <div id="titre2">
+                <h2> 1. Attendus du projet :</h2>
+            </div>
+            <div id="texte">
+                <p>
+                    - Réaliser un projet permettant de calculer la trajectoire des planètes du système solaire, dans un réferentiel solaire<br>
+                    - Création de nombreuses fonctions en Langage C et leurs explications pour décrire la trajectoire des planètes, exprimer par des vecteurs de position et de vitesse.<br>
+                    - Création de fonctions de calculs en Langage C pour nous aider à déterminer la trajectoire.<br>
+                    - Modèle d'Euler et le modèle d'Euler asymétrique seront à implémenter.<br>
+                    - Réalisation d'une partie énergétique. Elle sera utile à la vérification des calculs (l'énergie des planètes doit se conserver au cours du temps).<br>
+                    - Affichage de la trajectoire cacluclée avec l'exportation des données dans un fichier JSON.<br>
+                    - Création d'une interface graphique avec de nombreuses pages.<br>
+                </p>
+            </div>
+        <div id="technologies"> <!-- C'est ici que nous mettons les différentes technologies que nous avons du utiliser pour la réalisation du projet-->
+            <div id="titre2"> 
+                <h2> 2. Technologies utilisées </h2> 
+            </div>
+            <div id="texte">
+                <p>
+                    <div id="Liste"> <!-- Différentes photos avec leur nom-->
+                        <div id="Photo1">
+                            Langague C : <br>
+                            <img src="./images/Langage C.png"><br>    
+                        </div>
+                        <div id="Photo2">
+                            HTML : <br>
+                            <img src="./images/Html.png"><br>    
+                        </div>
+                        <div id="Photo3">
+                            CSS : <br>
+                            <img src="./images/Css.png"><br>        
+                        </div>
+                        <div id="Photo4">
+                            JavaScript : <br>
+                            <img src="./images/JavaScript.png"><br>    
+                        </div>
+                        <div id="Photo5">
+                            Visual Studio Code : <br>
+                        <img src="./images/Visual Studio Code.png"><br>
+                        </div>
+                    </div>                        
+                </p>
+            </div>    
+        </div>
+        </div>    
+        <div id="Engagement"> <!--C'est ici que nous avons mis ce que nous allions faire, dans la liste des extensions (tout ne sera pas forcément fait).-->
+            <div id="titre2">
+                <h2>3. Engagement sur la liste des fonctionnalités</h2>
+            </div>
+            <div id="titre 3">
+                <h3>Nécessaire :</h3> <!-- Ce que nous devons impérativement faire-->
+            </div>
+            <div id="texte">
+                <p>
+                    <strong>Création des structures :</strong><br>
+                    - Déclaration des structures (Vector, Point, Path, Planet, List) avec une bonne organisation, soit diviser dans les fichier ".c" et ".h".<br>
+                    <br>
+                    <strong>Codage de fonctions de création, d'accès et d'opérations sur les structures :</strong><br>
+                    
+                    Les fonctions qui vont être créer peuvent être répartis sous différetes catégories :<br>
+
+                    - Fonctions de création et suppression : Permet d'initialiser la structure et de la supprimer en libérant la mémoire dynamique.<br>
+                    - Fonction d'affichage de la structure : Permet d'afficher les différentes données stockées dans la structure.<br>
+                    - Fonction d'accès à la structure : Permet d'accéder aux données de la structure sans perturber le principe d'encapsulation.<br>
+                    - Fonction d'opérations : Permet d'effectuer différentes opérations.<br>
+                    - Fonctions de test de la structure : Permet de créer une fonction sans paramètres dans le main afin de tester la structure.<br>
+                    <br>
+                    <strong>Codages des fonctions de calculs :</strong><br>
+
+                    Fonctions qui vont aider aux calculs de la méthode d'Euler.<br>
+
+                    - Fonction de calcul d'accélération à un instant t : Fonction qui permet de simplifier le code et de calculer l'accélération à un instant t.<br>
+                    - Fonction pour la méthode d'Euler : Appliquer l'algorithme de la méthode d'Euler pour obtenir la trajectoire.<br>
+                    <br>
+                    <strong>Extraction des données dans un ficher JSON :</strong><br>
+                    
+                    - Fonctions d'extraction : Fonction qui permet de prendre une planète, qui extrait et écrit sa trajectoire dans un fichier JSON.<br>
+                    <br>
+                    <strong>Vérifications énergétiques :</strong><br>
+
+                    - Fonctions de verifications énergétique : Fonction qui vérifie si l'énergie est bien constante au cours du temps(avec marge d'erreur).<br>
+                    <br>
+                    <strong>Création d'une page web :</strong><br>
+
+                    - Imporation des données JSON : Fonction qui importe les données et les utilises.<br>
+                    <br>
+                    - Création de l'interface web initiale, elle comportera donc plusieurs pages : 
+                    <ol>
+                        <li>Acceuil : Présentation du projet.</li> 
+                            
+                        <li>Présentation : C'est ici qu'il y a aura le Canvas avec la trajectoire affichée.</li>
+                            
+                        <li>Informations : Il y aura donc la documentations astronomique sur chaque planète du système solaire, avec une page pour le lexique.</li>
+                            
+                        <li>Sources : On y retrouvera donc toutes les sources utilisées.</li>
+                            
+                        <li>Trajectoire : On pourra voir les réels trajectoires de chaque planète(on pourra notamment voir le décallage).</li> 
+                        
+                    </ol>
+            </p>
+            </div>
+            <hr>
+            <div id="titre3">
+                <h3>Recommandé :</h3> <!-- Des extensions plus ou moins faciles-->
+            </div>
+            <div id="texte">
+                <p>
+                    <strong>Amélioration du calcul à l'aide de la méthode d'Euler asymétrique : </strong><br>
+    
+                    - Fonctions de calcul amélioré : Fonction qui calcul la trajectoire à l'aide de la méthode d'Euler asymétrique.<br>
+                    <br>
+                    <strong>Calculer la trajectoire de toutes les planètes :</strong><br>
+    
+                    - Fonction addPlanet : Fonction qui automatisera le processus de calcul à toutes la planètes, ainsi, on pourra exporter en JSON la trajetcoire de toutes les planètes que l'on souhaite.
+                </p>
+            </div>
+            <hr>
+            <div id="titre3">
+                <h3>Ambitieux :</h3> <!--Des extensions si nous avons le temps-->
+            </div>
+            <div id="texte">
+                <p>
+                    <strong>Obtenir une interface graphique en C :</strong><br>
+
+                    - Menu : Nous allons coder un menu en C, afin que l'utilisateur puisse effectuer certaines actions<br>
+                    <br>
+                    <strong>Amélioration de l'interface web :</strong><br>
+
+                    - Ajouter des boutons à l'interface Web : 2 boutons start et stop pour contrôler le Canvas.
+                    - Ajouter un menu : Permet de choisir quelle trajectoire on veut afficher ou non.
+                    <br>
+                    <strong>Amélioration des calculs :</strong><br>
+
+                    - Modifier les fonctions de calculs en ajoutant les forces des autres planètes sur la planète dont on calcule la trajectoire.
+                    <br>
+                </p>
+            </div>
+            <hr>
+            <div id="titre3">
+                <h3>En plus :</h3> <!--Extension avec possibilité de le faire(on ne sait pas).-->
+            </div> 
+            <div id="texte">
+                <p>
+                    - Possibilité de changer le Canvas au niveau des couleurs.
+                </p>
+            </div>
+        </div>
+    </div>
+ </body>
+
+ 
+   

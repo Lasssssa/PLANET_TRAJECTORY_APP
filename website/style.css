@@ -1,0 +1,657 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #1C1C1C;
+}
+#btn-check{
+    margin-bottom: 1em;
+}
+#haut{
+    display: grid;
+    grid-template-columns: 500px 1fr 150px;
+    grid-template-rows: 80px;
+    background-color: #1D2030;
+    padding-bottom: 0.5em;
+}
+#leftHaut{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 1em;
+}
+
+#menu{
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 110px 110px 110px 110px 110px 1fr;
+    font-size: 20px;
+    word-spacing: 10px;
+
+}
+#menu a:link{
+    text-decoration:none;
+    color: white;
+
+}
+#chooseOption{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 0;
+    grid-column-end: 2;
+}
+#canvasMenu{
+    display: grid;
+    grid-template-columns: 900px 1fr;
+}
+#choixCanvas h1{
+    color: aliceblue;
+    border-bottom: solid white;
+    border-bottom-left-radius: 10%;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    padding-bottom: 0.5em;
+    border-bottom-right-radius: 10%;
+}
+#menuOption{
+    grid-template-columns: 1fr 1fr ;
+}
+#changebackGround{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-bottom: 1em;
+}
+#mercury_path{
+    border: #FF6600 solid;
+}
+#venus_path{
+    border: #FF6600 solid;
+}
+#earth_path{
+    border: #FF6600 solid;
+}
+#mars_path{
+    border: #FF6600 solid;
+}
+#jupiter_path{
+    border: #FF6600 solid;
+}
+#saturn_path{
+    border: #FF6600 solid;
+}
+#uranus_path{
+    border: #FF6600 solid;
+}
+#neptune_path{
+    border: #FF6600 solid;
+
+}
+#buttonDiv h3{
+    color: white;
+}
+#buttonDiv{
+    padding-left: 6em;
+    padding-right: 6em;
+    text-align: center;
+    word-spacing: 4em;
+    padding-top: 4em;
+    display: grid;
+    grid-template-rows: 150px  1fr;
+}
+#buttonDiv #planetMenu{
+    display: grid;
+    word-spacing: 4em;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+#Test{
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    padding-bottom: 1em;
+}
+#buttonDiv a:link{
+    text-decoration: none;
+    color: white;
+}
+#buttonDiv a:visited{
+    text-decoration: none;
+    color: white;
+}
+#buttonDiv a:hover{
+    text-decoration: none;
+    color:#FF6600 ;
+}
+#buttonDiv a:active{
+    text-decoration: none;
+    color: white;
+}
+#choixCanvas p{
+    color: white;
+    font-size: large;
+    padding-top: 0.70em;
+}
+#menuCanvas{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#canvasShowMenu h1{
+    color: white;
+    margin-bottom: 2em;
+    margin-right: 7em;
+    margin-left: 7em;
+    padding-bottom: 1em;
+    border-bottom: solid white;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+#canvasShowMenu #main{
+    border: #FF6600 solid 2px;
+}
+#canvasShowMenu {
+    padding-top: 5em;
+    text-align: center;
+    margin-bottom: 5em;
+}
+#choixCanvas {
+    margin-right: 5em;
+    margin-top: 3em;
+    text-align: center;
+    border: white solid 5px;
+    grid-template-rows: 70px 1fr;
+    background-color: #1C1C1C;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+#mercury {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-bottom: 1em;
+}
+#venus{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+#earth{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#jupiter{
+
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#mars{
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+h5{
+    color:white;
+    text-align: center;
+}
+#uranus{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+#neptune{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+#saturn{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+h2{
+    color:red;
+}
+#contact{
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: #1D2030;
+}
+#canvasShowMenu h3{
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    color: white;
+    border-bottom: solid white 3px;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+h3{
+    color: #FF6600;
+}
+#canvasleft{
+    margin-top: 3em;
+    word-spacing: 6em;
+    text-align: center;
+}
+#canvasMenu #main {
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border:#FF6600 solid 3px;
+    background-color: black;
+    /*background-image: url(./images/galaxie.jpeg); */
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#presentation{
+    margin-top: 4em;
+    margin-left: 4em;
+}
+#presentationPage{
+    display: grid;
+    grid-template-columns: 1100px 1fr;
+}
+#presentationPage #presentation #planete{
+    word-spacing: 1em;
+    border-bottom: solid #FF6600;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+#presentationPage #presentation #planete a:hover{
+    color: white;
+}
+
+#speech{
+    padding-top: 1em;
+    color: white;
+    text-align: center;
+    margin-top: 4em;
+    border:whitesmoke solid;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+
+}
+#speech p{
+    font-size: 20px;
+    color: beige;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#planete a:link{
+    text-decoration: none;
+    color:#FF6600;
+}
+#planete a:hover{
+    text-decoration: none;
+    color:white;
+}
+#planete a:active{
+    text-decoration: none;
+    color:white;
+}
+#planete a:visited{
+    text-decoration: none;
+    color:#FF6600;
+}
+
+#image{
+    text-align: center;
+    padding-left: 100px
+}
+#image h1{
+    color: #FF6600;
+}
+
+#id1color{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #FF6600;
+    border-width: 4px;
+}
+#id2color{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #FF6600;
+    border-width: 4px;
+}
+#id3color{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #FF6600;
+    border-width: 4px;
+}
+#id4color{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #FF6600;
+    border-width: 4px;
+}
+#id5color{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #FF6600;
+    border-width: 4px;
+}
+#menu a:visited{
+    text-decoration: none;
+    color:white;
+}
+#menu a:active{
+    text-decoration: none;
+    color: #FF6600;
+}
+
+#menu #id1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    border-bottom: solid;
+    border-color:#2D2D2D;
+    border-width: 4px;
+}
+#menu #id2{
+    grid-row-start: 1;
+    text-align: center;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border-bottom: solid;
+    border-color: #2D2D2D;
+    border-width: 4px;
+}
+#menu #id3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-bottom: solid;
+    border-color: #2D2D2D;
+    border-width: 4px;
+}
+#menu #id4{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    grid-column-start: 4;
+    border-bottom: solid;
+    border-color: #2D2D2D;
+    grid-column-end: 4;
+    border-width: 4px;
+}
+#menu #id5{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    grid-column-start: 5;
+    border-bottom: solid;
+    border-color: #2D2D2D;
+    grid-column-end: 5;
+    border-width: 4px;
+}
+#menu #id5 a:hover{
+    text-decoration: none;
+    color: #FF6600;
+}
+#menu #id4 a:hover{
+    text-decoration: none;
+    color: #FF6600;
+}
+#menu #id3 a:hover{
+    text-decoration: none;
+    color: #FF6600;
+}
+#menu #id2 a:hover{
+    text-decoration: none;
+    color: #FF6600;
+}
+#menu #id1 a:hover{
+    text-decoration: none;
+    color: #FF6600;
+}
+#id1.onclick{
+    border-bottom: solid;
+    border-color: #FF6600;
+}
+#accueil{
+
+    display: grid;
+    border: #FF6600 solid;
+    border-width: 4px;
+    padding: 1em;
+    border-radius: 10%;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    margin-left: 9em;
+    margin-right: 9em;
+    
+    text-align: center;
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-size: large;
+    
+    color:white;
+
+    background-image: url("./images/star.jpg");
+}
+#speech #lexique p{
+    text-align: left;
+    color:white;
+}
+#accueil h1{
+    
+    border-left: #FF6600;
+    border-width: 0.2em;
+    padding-left : 0.5em;
+    
+    text-decoration: underline;
+
+}
+
+#accueil h2{
+
+    border-left: #FF6600 ;
+    border-width: 0.2em;
+    padding-left:0.5em;
+    color:#FF6600;
+    
+    text-decoration: underline;
+    color:#FF6600;
+
+}
+
+#accueil h3{
+
+    text-decoration : underline;
+    font-weight : bold; 
+
+}
+
+#accueil hr{
+
+    color: #FF6600;
+
+}
+
+#Liste{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; 
+    grid-template-rows: 150px;
+    grid-column-gap: 40px;
+}
+
+#accueil Photo1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#accueil Photo2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+#accueil Photo3{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+#accueil Photo4{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 4;
+    grid-column-end: 4;
+}
+
+#accueil Photo5{
+
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+
+}
+
+#source {
+
+    color : white;
+    text-align: center;
+    text-decoration: none;
+        
+
+}
+
+#source hr{
+
+    font-weight: bold;
+    color :#FF6600;
+
+
+}
+
+#source h1{
+
+    text-align: center;
+    font-weight: bold;
+    display: grid;
+    border: #FF6600 solid;
+    border-width: 4px;
+    padding: 1em;
+    border-radius: 20%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 15em;
+    margin-right: 15em;
+
+    background-image: url("./images/star.jpg");
+}
+
+#source p{
+
+    display: grid;
+    border: #FF6600 solid;
+    border-width: 4px;
+    padding: 1em;
+    border-radius: 10%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-left: 9em;
+    margin-right: 9em;
+    font-size: 25px;
+
+    background-image: url("./images/star.jpg");
+
+}
+#source u{
+
+   font-size: 50px;
+   padding-bottom: 1em;
+
+}
+
+#source #type a:link{
+
+    color: #FF6600; 
+    text-decoration: none;
+
+}
+#source #type a:visited{
+
+    color: #FF6600; 
+    text-decoration: none;
+
+}
+#source #type  a:hover{
+
+    color: white; 
+    text-decoration: none;
+
+}
+#source i{
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 15em;
+    margin-right: 15em;
+    border-radius: 20%;
+    border-bottom: solid 3px ;
+    font-size: larger;
+}
+#texte li{
+    list-style-type: none;
+}
+#contact{
+    background-color: #1D2030;
+    border:black solid 3px;
+    margin-top: 3em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 5em;
+}
+#contact h1{
+    color: white;
+    text-align: center;
+}

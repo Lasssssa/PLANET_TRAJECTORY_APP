@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head> <!-- Tout les liens donc nous avons besoin pour prendre des ressources sur internet-->
+   <meta charset="utf-8">
+   <title> Trajectoire </title> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="./jsTrajectorie/main.js" type="module"></script>
+</head>   
+  <body> 
+     <div id="haut"> <!-- Image ISEN Associations des inégnieurs --> 
+         <div id="leftHaut">
+              <img src="images/logo-footer.png" width="400">
+         </div>
+      </div>
+      <div> <!-- Barre pour mettre du relief avec l'image -->
+          <img src="images/test.png">
+      </div>
+      <div id="menu"> <!-- Barre de navigation entre les différentes pages -->
+          <div id="id1"> 
+              <a href="accueil.html">Accueil</a>
+          </div>
+          <div id="id2">
+              <a href="presentation.html">Présentation</a>
+          </div>
+          <div id="id3">
+              <a href="informations.html">Informations</a>
+          </div>
+          <div id="id4">
+              <a href="sources.html">Sources</a>
+          </div>
+          <div id="id5color">
+              <a href="enplus.html">Trajectoire</a>
+          </div>
+      </div>
+      <div id="buttonDiv"> <!-- Nous avons ici des boutons, qui permettent de choisir quelles méthodes nous voulons choisir(Euler asymétrique ou non), lors que l'affichage -->
+        <div id="method_Button">
+            <button type="button" class="btn btn-success" id="euler">Euler Method</button>
+            <button type="button" class="btn btn-danger" id ="eulerasymetric">EulerAsymetric Method</button>
+        </div>
+        <div id="planetMenu"> <!-- Nous avons ici tout les boutons des planètes, pour montrer la trajectoire mais seulement une à la fois -->
+            <div id="mercury_path">
+                <h3>Mercury</h3>
+                <button id="buttonMercury" type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="venus_path"> 
+                <h3>Venus</h3>
+            <button id="buttonVenus"type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="earth_path">
+                <h3>Earth</h3>
+            <button id="buttonEarth" type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="mars_path">
+                <h3>Mars</h3>
+            <button id="buttonMars" type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="jupiter_path">
+                <h3>Jupiter</h3>
+            <button id="buttonJupiter"type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="saturn_path">
+                <h3>Saturn</h3>
+            <button id="buttonSaturn"type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="uranus_path">
+                <h3>Uranus</h3>
+            <button id="buttonUranus" type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+            <div id="neptune_path">
+                <h3>Neptune</h3>
+            <button id="buttonNeptune" type="button" class="btn btn-info"><a href="#main">Show All Path</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="canvasShowMenu"> <!--C'est ici que les trajectoires vont être affiché-->
+        <h3>
+            Espace de Dessin des Trajectoires
+        </h3>
+        <canvas id="main" class="test" height="625" width="850">
+            Test
+        </canvas>
+    </div>
+   </body> 
+ </html>
+ 

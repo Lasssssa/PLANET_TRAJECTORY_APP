@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+    <meta charset="utf-8">
+    <title> Presentation </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<script src="./jsMooving/main.js" type="module" defer></script>
+</head>
+<body>
+   <div id="haut"> <!-- Image ISEN Associations des inégnieurs -->
+       <div id="leftHaut">
+            <img src="images/logo-footer.png" width="400">
+       </div>
+    </div>
+    <div> <!-- Barre pour mettre du relief avec l'image -->
+        <img src="images/test.png">
+    </div>
+    <div id="menu"> <!-- Barre de navigation entre les différentes pages -->
+        <div id="id1">
+            <a href="accueil.html">Accueil</a>
+        </div>
+        <div id="id2color">
+            <a href="presentation.html">Présentation</a>
+        </div>
+        <div id="id3">
+            <a href="informations.html">Informations</a>
+        </div>
+        <div id="id4">
+            <a href="sources.html">Sources</a>
+        </div>
+        <div id="id5">
+            <a href="enplus.html">Trajectoire</a>
+        </div>
+    </div>
+    <div id="canvasMenu"> <!--Page de présentation du Canvas-->
+        <div id="canvasleft">
+            <!--Ces boutons sont importés par bootStrap-->
+            <button id="buttonStart" type="button" class="btn btn-success">Start</button>
+            <button id="buttonChangeScale" type="button" class="btn btn-danger">Scale Changer</button>
+            <button id="buttonReset" type="button" class="btn btn-primary">Reset</button>
+            <button id="changeOption" type="button" class="btn btn-warning"><a href="presentation.html">Planet Path</a> </button>
+            <div id="canvadessin">
+                <canvas id="main" class="test" height="700" width="700">
+                    Test
+                </canvas>
+            </div>
+        </div>
+         <div id="choixCanvas"> <!-- Différents bouton pour afficher ou non les planètes sur le Canvas-->
+            <h1>Planet Options</h1>
+            <p>The first 4 planets are available in "little scale" mode. For the last 4 planets, you must activate the "large scale" mode.</p>>
+            <p>the speed of the planets is accelerated 10 times in the "large scale" mode</p>
+            <div id="menuCanvas">
+                <!--Ici, on utilise des check box importé par Bootsrap-->
+                <div id="mercury">
+                    <h3>Mercury</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Mercure-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="mercury_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>  
+                </div>
+                <div id="venus">
+                    <h3>Venus</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Venus-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="venus_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="earth">
+                    <h3>Earth</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Terre-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="earth_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="mars">
+                    <h3>Mars</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Mars-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="mars_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="jupiter">
+                    <h3>Jupiter</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Jupiter-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="jupiter_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="saturn">
+                    <h3>Saturn</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Saturn-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" name="saturn_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="uranus">
+                    <h3>Uranus</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Uranus-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"name="uranus_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+                <div id="neptune">
+                    <h3>Neptune</h3>
+                    <br>
+                    <div class="form-check form-switch"> <!--Bouton permettant d'afficher le mouvement de Neptune-->
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"name="neptune_mooving">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"><h5>Show Animation</h5></label>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+ </body>
+   
