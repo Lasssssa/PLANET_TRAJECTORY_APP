@@ -25,11 +25,11 @@ The aim was also to create a `web application` to display the trajectories previ
 - `apt-get install git git-core`
 ### Clone the repository
 - `cd /var/www/html`
-- `sudo git clone https://github.com/Lasssssa/PROJET_KEPLER_CIR1` 
+- `sudo git clone https://github.com/Lasssssa/PLANET_TRAJECTORY_APP` 
 - This may take some time, as the json planet path are a little bit heavy
 ### Update
 - `cd /var/www/html/PROJET_KEPLER_CIR1`
-- `sudo git pull https://github.com/Lasssssa/PROJET_KEPLER_CIR1`
+- `sudo git pull https://github.com/Lasssssa/PLANET_TRAJECTORY_APP`
 
 
 # Use of the site
@@ -60,4 +60,4 @@ The application is divided into 5 parts
 
 
 ## Repertory Github : 
-https://github.com/Lasssssa/PROJET_KEPLER_CIR1
+https://github.com/Lasssssa/PLANET_TRAJECTORY_APP
