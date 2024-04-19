@@ -1,11 +1,14 @@
 # Kepler Project - CIR1 Project - End Year
 
-Creator of **Projet Kepler** : Théo Porodo / Éthan LE PAN
-
 # What is the aim of this project ?
 
 The aim of this end-of-year CIR1 (computer science and networks) project was to create a `C application` that calculates the trajectories of planets in the solar system using several methods, such as the Euler method or the asymmetric Euler method. 
 The aim was also to create a `web application` to display the trajectories previously calculated by the C
+
+# Installation with Docker
+Unfortunately, this project has not been programmed with docker, so you need to set up your Linux machine.
+
+However, it's possible that a version with docker will be released one day.
 
 # Setup the linux machine
 
@@ -28,7 +31,7 @@ The aim was also to create a `web application` to display the trajectories previ
 - `sudo git clone https://github.com/Lasssssa/PLANET_TRAJECTORY_APP` 
 - This may take some time, as the json planet path are a little bit heavy
 ### Update
-- `cd /var/www/html/PROJET_KEPLER_CIR1`
+- `cd /var/www/html/PLANET_TRAJECTORY_APP`
 - `sudo git pull https://github.com/Lasssssa/PLANET_TRAJECTORY_APP`
 
 
@@ -59,5 +62,5 @@ The application is divided into 5 parts
 - And finally, two parts for generating the json files used by the web application
 
 
-## Repertory Github : 
+## Repository Github : 
 https://github.com/Lasssssa/PLANET_TRAJECTORY_APP
